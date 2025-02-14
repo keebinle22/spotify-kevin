@@ -1,0 +1,4 @@
+@URL = https://api.spotify.com/v1/me/player/recently-played?before=1739458938171
+
+GET {{URL}} HTTP/1.1
+Authorization: "Bearer BQAMrTYWovCBNfzbNWz2D3iKgZdHzHvo-fHNojT6v2fnZiHFKrSnH3PATrHr-nZuBsyXm_eLvyM_NyeqHGb4L_6cwHjvFhiSwi5d3KlSDZH1M_Umb8qomQf3apCi__uBdCify315GcWA9xk3TKNu2SbenzVGBd8EoqmDX8qVE0CdXXfB6nxGQzywH0BmRNN72LmN0j-33g6gtf33UZ64JVI6iaaTe8g
