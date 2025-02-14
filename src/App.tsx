@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
-import './App.css'
+import axios from 'axios';
+import { useEffect } from 'react';
+import './App.css';
 import { fetchProfile, getAccessToken, populateUI, redirectToAuthCodeFlow } from './authenticationCode';
 import Replay from './Replay';
-import axios from 'axios';
 
 function App() {
   
