@@ -1,4 +1,5 @@
 export async function redirectToAuthCodeFlow(clientId: string) {
+    console.log(import.meta.env.VITE_URL)
     const verifier = generateCodeVerifier(128);
     const challenge = await generateCodeChallenge(verifier);
 

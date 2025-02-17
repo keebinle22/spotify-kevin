@@ -5,7 +5,7 @@ interface Tracks{
 export default function Tracks({arr}: Tracks){
 
     return(
-        <div>
+        <div className="d-flex flex-column">
             <table>
                 <thead>
                     <tr>
@@ -14,16 +14,16 @@ export default function Tracks({arr}: Tracks){
                         <th></th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="border border-dark">
                     {arr.map((res: any, idx: any) => {
                         return(
                             <tr key={idx}>
-                                <td>
+                                <td className="border border-dark">
                                     <div>{res.name}</div>
                                     <small>{res.artists[0].name}</small>
                                 </td>
-                                <td>{res.popularity}</td>
-                                <td><img src={res.album.images[0].url} alt="no image available" height={100} width={100} /></td>
+                                <td className="border border-dark">{res.popularity}</td>
+                                <td className="border border-dark"><img src={res.album.images[0].url} alt="no image available" height={100} width={100} /></td>
                             </tr>
                         )
                     })}

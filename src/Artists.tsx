@@ -5,7 +5,7 @@ interface Artists{
 export default function Artists({arr}: Artists){
 
     return(
-        <div>
+        <div className="d-flex flex-column">
             <table>
                 <thead>
                     <tr>
@@ -17,10 +17,10 @@ export default function Artists({arr}: Artists){
                 <tbody>
                     {arr.map((res: any, idx: any) => {
                         return (
-                            <tr key={idx}>
-                                <td>{res.name}</td>
-                                <td>{res.popularity}</td>
-                                <td><img src={res.images[0].url} alt="no image available" height={100} width={100} /></td>
+                            <tr key={idx} className="border border-dark">
+                                <td className="border border-dark">{res.name}</td>
+                                <td className="border border-dark">{res.popularity}</td>
+                                <td className="border border-dark"><img src={res.images[0].url} alt="no image available" height={100} width={100} /></td>
                             </tr>
                         )
                     })}
